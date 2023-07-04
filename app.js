@@ -15,6 +15,7 @@ const menu = document.querySelector('.menu');
 const button1 = document.querySelector('.t-av');
 const container = document.querySelector('.container');
 const swiper = document.querySelector('.swiper');
+const scrollTitle = document.querySelector('.scroll-title');
 
 let game = setInterval(MoveSpirit, 1);
 let game2;
@@ -32,7 +33,6 @@ button.onclick = () => {
     spirit.setAttribute('style', `top: 200px; left:400px; transform:rotate(0deg); visibility: hidden;}`);
     button.removeChild(button1);
     game2 = setTimeout(StartSpirit, 1000);
-
 }
 
 function StartSpirit() {
@@ -44,6 +44,10 @@ function StartSpirit() {
         clearInterval(game2);
         swiper.classList.toggle('hidvis');
         menu.classList.toggle('hidvis2');
+        scrollTitle.setAttribute('style', 'visibility: visible')
+        setTimeout(() => {
+            scrollTitle.setAttribute('style', 'visibility: hidden')
+        }, 4000);
     }
     else {
         requestAnimationFrame(StartSpirit);

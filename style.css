@@ -25,6 +25,21 @@ body {
     src: url('./font/TorukSC-Regular.woff2');
 }
 
+.scroll-title {
+    font-family: avatar2;
+    font-size: calc(var(--index) * 2);
+    background-image: linear-gradient(0deg, #cd4610, #fbff85);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    z-index: 10;
+    top: 2%;
+    left: 38%;
+    opacity: .8;
+    visibility: hidden;
+    
+}
+
 .back {
     inset: 0;
     z-index: 5;
