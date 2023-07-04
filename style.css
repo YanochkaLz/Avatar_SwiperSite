@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --transition: 3s cubic-bezier(0.5, 0.3, 0.2, 0.3);
+    --index: calc(1vw + 1vh);
+}
+
+html,
+body {
+    height: 100%;
+    background-color: black;
+}
+
+@font-face {
+    font-family: avatar1;
+    src: url('./font/Toruk-Regular.woff2');
+}
+
+@font-face {
+    font-family: avatar2;
+    src: url('./font/TorukSC-Regular.woff2');
+}
+
+.back {
+    inset: 0;
+    z-index: 5;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.container {
+    height: 100%;
+    background-image: url('./img2/642155.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.menu {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    visibility: visible;
+    transition: auto 2s;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-avatar {
+    font-family: avatar2;
+    font-size: calc(var(--index) * 5);
+    letter-spacing: 7px;
+    background-image: linear-gradient(0deg, #105ecd, #85ceff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    will-change: auto;
+    transition: auto 2s;
+    position: relative;
+}
+
+.t-av {
+    position: absolute;
+    top: 0;
+    z-index: 15;
+    background-image: linear-gradient(0deg, #183d71, #48acef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 7px #90c1f7;
+    will-change: auto;
+    transition: auto 2s;
+}
+
+.t-av:hover {
+    text-shadow: 0px 0px 100px #97c7f9;
+}
+
+.spirit {
+    position: absolute;
+    z-index: 10;
+    width: calc(var(--index) * 23);
+    top:0px;
+    transition: 1s cubic-bezier(0.5, 0.4, 0.3, 0.4);
+}
+
+
+.swiper {
+    visibility: hidden;
+    transition: auto 2s;
+}
+
+.hidvis {
+    visibility: visible;
+}
+.hidvis2 {
+    visibility: hidden;
+}
+
+.slider {
+    height: 100%;
+}
+
+.slider_layer {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    will-change: transform;
+    background-position: center;
+    transition: var(--transition) !important;
+}
+
+.slider_layer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    box-shadow: inset 0 0 250px rgb(0 0 0 / .3)
+}
+
+.slider__item {
+    overflow: hidden;
+}
+
+.slider_wrapper {
+    will-change: transform;
+    transform-style: preserve-3d;
+    transition: var(--transition) !important;
+}

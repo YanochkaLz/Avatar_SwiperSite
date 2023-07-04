@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Toruk';
+    src: url('Toruk-Regular.eot');
+    src: local('Toruk Regular'), local('Toruk-Regular'),
+        url('Toruk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Toruk-Regular.woff2') format('woff2'),
+        url('Toruk-Regular.woff') format('woff'),
+        url('Toruk-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TorukSC';
+    src: url('TorukSC-Regular.eot');
+    src: local('TorukSC Regular'), local('TorukSC-Regular'),
+        url('TorukSC-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TorukSC-Regular.woff2') format('woff2'),
+        url('TorukSC-Regular.woff') format('woff'),
+        url('TorukSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
